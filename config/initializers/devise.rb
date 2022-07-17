@@ -26,8 +26,8 @@ Devise.setup do |config|
   # with default "from" parameter.
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
   config.omniauth :google_oauth2, 
-                  Rails.application.credentials.dig(:google_oauth_client_id),
-                  Rails.application.credentials.dig(:google_oauth_client_secert)
+                  Rails.application.credentials.dig(:google_oauth),
+                  Rails.application.credentials.dig(:google_oauth)
   # ,scope: 'userinfo.email,userinfo.profile'/users/auth/google_oauth2/callback
 
   # Configure the class responsible to send e-mails.
